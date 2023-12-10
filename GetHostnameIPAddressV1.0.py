@@ -13,8 +13,8 @@ import socket
 def get_Host_name_IP(): 
 #The gethostname function retrieves the standard host name for the local computer.
     try: 
-        host_name = socket.gethostname() 
         #Use socket and its gethostname() functionality. This will get the hostname of the computer where the Python interpreter is running.
+        input = host_name("hostname")
         host_ip = socket.gethostbyname(host_name) 
         #gethostbyname() returns just one ip of the host even though the host  could resolve to multiple IPs from a given location.
         #The returned IP address is an IPv4 address.  
